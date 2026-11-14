@@ -1,22 +1,22 @@
 class Overseer < Formula
   desc "One overseer agent coordinating a fleet of coding agents"
   homepage "https://github.com/Ephasme/overseer"
-  version "0.1.2"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Ephasme/overseer/releases/download/v0.1.2/overseer-aarch64-apple-darwin.tar.gz"
-      sha256 "338c527995ff305423da67125f452a242f9d121ee52b3ff567670e878ee1300c"
+      url "https://github.com/Ephasme/overseer/releases/download/v0.2.0/overseer-aarch64-apple-darwin.tar.gz"
+      sha256 "2ea2272ecd9fb19df0e6b2a4936bb96cf8fab437f659f3af032bdcb3bbe7e196"
     end
     on_intel do
-      url "https://github.com/Ephasme/overseer/releases/download/v0.1.2/overseer-x86_64-apple-darwin.tar.gz"
-      sha256 "6af95b4502715d114638862aabd15faffb1adcce1a451f1ed08aeef36748afec"
+      url "https://github.com/Ephasme/overseer/releases/download/v0.2.0/overseer-x86_64-apple-darwin.tar.gz"
+      sha256 "c08d08d452be0c4c3bb46197158b2f6e2c5a3970469bb7f9bf9ebe9114fd078f"
     end
   end
 
   on_linux do
-    url "https://github.com/Ephasme/overseer/releases/download/v0.1.2/overseer-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "fe69006be20c1e30531ef6018b26b08102a7ee88c3723717f6b8613766ad4012"
+    url "https://github.com/Ephasme/overseer/releases/download/v0.2.0/overseer-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "61b6f4274d0a46f6a2787fd3ab66ceab4956074c8964a48b7bb49dcee5c9e51c"
   end
 
   def install
