@@ -9,7 +9,7 @@ class Overlord < Formula
     on_arm do
       url "https://github.com/Ephasme/overlord/releases/download/v0.1.0/overlord-aarch64-apple-darwin.tar.gz",
           using: GitHubReleaseAssetDownloadStrategy
-      sha256 "81b53b3fb45e201d7462f77f9b764671f7cdd8dbea310b98ca0cb3c5c36ec51f"
+      sha256 "055ccd0c6a6dc86c66e1d1af463c2f07d1b2de382fda5d440d1ce97a715fef9b"
     end
     on_intel do
       url "https://github.com/Ephasme/overlord/releases/download/v0.1.0/overlord-x86_64-apple-darwin.tar.gz",
