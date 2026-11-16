@@ -20,7 +20,7 @@ class GitHubReleaseAssetDownloadStrategy < CurlDownloadStrategy
   def asset
     @asset ||= begin
       release = GitHub::API.open_rest(
-        "#{GitHub::API::API_URL}/repos/#{@owner}/#{@repo}/releases/tags/#{@tag}",
+        "#{GitHub::API_URL}/repos/#{@owner}/#{@repo}/releases/tags/#{@tag}",
         scopes: ["repo"],
       )
       found = release.fetch("assets").find { |a| a.fetch("name") == @filename }
