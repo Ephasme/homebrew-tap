@@ -3,25 +3,25 @@ require_relative "github_release_asset"
 class Overlord < Formula
   desc "Deterministic daemon driving herdr worktrees through plan → harden → build → PR → review → merge → deploy"
   homepage "https://github.com/Ephasme/overlord"
-  version "0.2.0"
+  version "1.0.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Ephasme/overlord/releases/download/v0.2.0/overlord-aarch64-apple-darwin.tar.gz",
+      url "https://github.com/Ephasme/overlord/releases/download/v1.0.0/overlord-aarch64-apple-darwin.tar.gz",
           using: GitHubReleaseAssetDownloadStrategy
-      sha256 "e59ee0338cf27b5e8f8928af9de47c5d113e57012d9cd46ce38c166ceea35be0"
+      sha256 "0dfa8c3de1bc6394999a999d0e7e5e2feb48d0a405e5683901cf3ac1537daa51"
     end
     on_intel do
-      url "https://github.com/Ephasme/overlord/releases/download/v0.2.0/overlord-x86_64-apple-darwin.tar.gz",
+      url "https://github.com/Ephasme/overlord/releases/download/v1.0.0/overlord-x86_64-apple-darwin.tar.gz",
           using: GitHubReleaseAssetDownloadStrategy
-      sha256 "a991d6aa1f2b8806dbb52f668b360ca68e4ea414e2acb0be597fdabfa847f7af"
+      sha256 "943773cf886574343d550d935a7a9cd67d9669a25b5664358ef454f92433eec1"
     end
   end
 
   on_linux do
-    url "https://github.com/Ephasme/overlord/releases/download/v0.2.0/overlord-x86_64-unknown-linux-musl.tar.gz",
+    url "https://github.com/Ephasme/overlord/releases/download/v1.0.0/overlord-x86_64-unknown-linux-musl.tar.gz",
         using: GitHubReleaseAssetDownloadStrategy
-    sha256 "c5beb3ba9153bcafa1978728cbca86530726eed62712c4312ce8f1721cdd741f"
+    sha256 "4a04167a7355f248c3feff3d3fc89200909dfa715fe8a5735ea6acb06139d4ac"
   end
 
   def install
